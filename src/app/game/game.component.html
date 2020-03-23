@@ -1,0 +1,25 @@
+<div class="content">
+  <div [@alarmState]="sold"  class="alert alert-success fade show" role="alert">
+    Thanks for buying {{gameLoaded.name}}!
+  </div>
+  <div class="row m-4">
+    <div class="col-6">
+      <h3>{{gameLoaded.name}}</h3>
+      <img style="height: 400px; width: 600px" [src]="gameLoaded.imageURL">
+    </div>
+    <div class="col-lg-4 offset-lg-1">
+      <h3>Synopsis</h3>
+      <div class="info">
+        <p>{{gameLoaded.description}}</p>
+      </div>
+      <h3>Value</h3>
+      <div class="info">
+        {{gameLoaded.price | currency}} <button (click)="onBuy()" style="width: 4rem; height: 2.5rem" class="btn btn-danger ml-4">Buy</button>
+      </div>
+      <h3>Genre</h3>
+      <div class="info">
+        {{gameLoaded.genre}}
+      </div>
+    </div>
+  </div>
+</div>

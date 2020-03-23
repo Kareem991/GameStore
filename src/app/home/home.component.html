@@ -1,0 +1,37 @@
+  <div class="row">
+    <div class="col">
+      <div class="main">
+        <div class="paragraph">
+          <h1>Welcome To Zstore</h1>
+        </div>
+    </div>
+      <div id="about" class="about">
+          <div class="paragraph">
+            <h1>About</h1>
+            <p>This store was created for the solely purpose of serving games to the right people (aka real gamers), so feel free to explore our offers and exclusive deals.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+        <div class="store">
+        <div class="content mt-4">
+          <h1>Our Store</h1>
+              <div class="row p-3">
+                <div class="col-sm-4 d-flex align-items-stretch" *ngFor="let game of games; let i = index">
+            <div class="card">
+              <img class="card-img-top" [src]="game.imageURL" alt="Game Cover">
+              <div class="card-body">
+                <h5 class="card-title">{{game.name}}</h5>
+                <p class="card-text">{{game.description}}</p>
+                <a [routerLink]= "'/games/'+i" class="btn btn-primary">Details</a>
+            </div>
+              </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+.main{
+  text-align: center;
+  height: 700px;
+  padding: 0%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 100%;
+  background-image: url("../../assets/Images/Main.jpg");
+}
+.about{
+  text-align: center;
+  height: 650px;
+  padding: 0%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 100%;
+  background-image: url("../../assets/Images/About.jpg");
+}
+.store{
+  text-align: center;
+  height: 650px;
+  padding: 0%;
+  position: relative;
+  max-width: 100%;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+
+.paragraph{
+  padding: 3rem;
+  color: #9D9BA4;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+   h1{
+    margin-bottom: 3rem;
+    color: #9D9BA4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+
+
+
